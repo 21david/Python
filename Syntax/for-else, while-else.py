@@ -4,7 +4,7 @@ If the for loop breaks at some point, it will skip the else block completely.
 
 Another way to think of it is "if-for-fully-completes: [code]"
 
-It can also be used with while and try. See the other files in this folder.
+It can also be used with while and try.
 '''
 
 for i in range(10):
@@ -41,4 +41,33 @@ Output:
 3
 4
 5
+'''
+
+
+i = 0
+while (i := i + 1) < 6:
+    print(i)
+else:
+    print('done')
+'''
+1
+2
+3
+4
+5
+done
+'''
+
+
+i = 0
+while (i := i + 1) < 6:
+    if i == 4:
+        break
+    print(i)
+else:
+    print('done')
+'''
+1
+2
+3
 '''
