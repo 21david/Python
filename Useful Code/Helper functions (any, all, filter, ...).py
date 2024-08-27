@@ -87,3 +87,29 @@ Returns an iterator of tuples containing index and element pairs
 '''
 enumerated = list(enumerate(['a', 'b', 'c']))
 print(enumerated)  # Output: [(0, 'a'), (1, 'b'), (2, 'c')]
+
+'''
+round(number, ndigits=None)
+Returns the number rounded to ndigits precision after the decimal point. If ndigits is omitted or None, it returns the nearest integer.
+'''
+rounded_number = round(3.14159, 2)
+print(rounded_number)  # Output: 3.14
+
+rounded_integer = round(3.75)
+print(rounded_integer)  # Output: 4
+
+
+'''
+str.replace(old, new, count=-1)
+Returns a copy of the string where all occurrences of the substring old are replaced with the substring new. If the optional argument count 
+is given, only the first 'count' occurrences are replaced.
+'''
+replaced_string = "hello world".replace("world", "there")
+print(replaced_string)  # Output: "hello there"
+
+limited_replace = "hello hello hello".replace("hello", "hi", 2)
+print(limited_replace)  # Output: "hi hi hello"
+
+# Replacing all occurrences of a single letter
+all_letters_replace = "banana".replace("a", "o")
+print(all_letters_replace)  # Output: "bonono"
